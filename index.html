@@ -24,28 +24,30 @@
         var username = prompt('hello! who are you?') ;
 
 
-
             if (username === 'arijit') {
-                document.write("<h1>Hello, " + username + " you are great!!!" + "</h1>");
+                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
             }
             else if (username === 'Arijit') {
-                document.write("<h1>Hello, " + username + " you are great!!!" + "</h1>");
+                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
             }
             else if (username === "anik") {
                 document.write("<h1> bolo paglachoda</h1>");
             }
             else if (username === "Anik") {
                 document.write("<h1> bolo paglachoda</h1>");
+                let res = document.getElementById('result');
+
             }
             else if (username === "sagar") {
-                document.write("<h1> bolo paglachoda</h1>");
+                    document.write("<h1> bolo paglachoda</h1>");
             }
-            else if (username === "Sagar") {
+            else if (username === "Sagar")
+            {
                 document.write("<h1> bolo paglachoda</h1>");
-            }
-            else {
+            } else {
                 document.write("<h1>Hello, " + username + "</h1>");
             }
+
 
 
 
@@ -55,7 +57,21 @@
 
 <body>
 
+<div id = "img"> </div>
+<script>
+    if (username === "anik") {
+        let img = document.getElementById('img');
+        // Create image element
+        let dynamicImage = document.createElement('img');
+        // Initialize the image source
+        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
+        // Add image to DOM
+        img.appendChild(dynamicImage);
+    }
+    else {
 
+    }
+</script>
 </body>
 
 </html>
