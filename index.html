@@ -32,6 +32,10 @@
             }
             else if (username === "anik") {
                 document.write("<h1> bolo paglachoda</h1>");
+            }else if (username === "Dibyendu") {
+                document.write("<h1> bolo paglachoda</h1>");
+            }else if (username === "dibyendu") {
+                document.write("<h1> bolo paglachoda</h1>");
             }
             else if (username === "Anik") {
                 document.write("<h1> bolo paglachoda</h1>");
@@ -58,6 +62,20 @@
 <body>
 
 <div id = "img"> </div>
+<style>
+    #img{
+        margin: auto;
+        width: 200px;
+    }
+    img{
+      width: auto;
+        height: auto;
+    }
+    @media screen and (min-width: 600px){
+
+        
+    }
+</style>
 <script>
     if (username === "anik") {
         let img = document.getElementById('img');
@@ -68,7 +86,32 @@
         // Add image to DOM
         img.appendChild(dynamicImage);
     }
-    else {
+    else if (username==="Anik") {
+        let img = document.getElementById('img');
+        // Create image element
+        let dynamicImage = document.createElement('img');
+        // Initialize the image source
+        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
+        // Add image to DOM
+        img.appendChild(dynamicImage);
+
+    }else if (username==="dibyendu") {
+        let img = document.getElementById('img');
+        // Create image element
+        let dynamicImage = document.createElement('img');
+        // Initialize the image source
+        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
+        // Add image to DOM
+        img.appendChild(dynamicImage);
+
+    }else if (username==="Dibyendu") {
+        let img = document.getElementById('img');
+        // Create image element
+        let dynamicImage = document.createElement('img');
+        // Initialize the image source
+        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
+        // Add image to DOM
+        img.appendChild(dynamicImage);
 
     }
 </script>
