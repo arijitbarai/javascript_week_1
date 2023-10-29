@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="Eng">
 <head>
     <title>Oprah Likes You. And so do other people.</title>
 
@@ -7,10 +7,12 @@
 
         /* Basic CSS comment */
         body {
-            background: #bbb;
+            background: grey;
             color: white;
             width: 960px;
             margin: 0 auto;
+            font-size: 30px;
+            color: black;
         }
 
         h1 {
@@ -21,39 +23,25 @@
     </style>
 
     <script>
-        var username = prompt('hello! who are you?') ;
+        /* this is an event */
+        /* alert("I'm annoying"); */
+
+        const username = prompt("Hello, who are you?");
+        const car = ["BMW", "TATA", "Fortuner"];
+        const Cimg = ['download.jpg', 'Harrier_Camo_1200x768.avif', 'fornt-side-47.webp'];
+        console.log(username);
+        console.log(car);
+
+        const randomcar = Math.floor(Math.random() * car.length);
 
 
-            if (username === 'arijit') {
-                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
-            }
-            else if (username === 'Arijit') {
-                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
-            }
-            else if (username === "anik") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }else if (username === "Dibyendu") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }else if (username === "dibyendu") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }
-            else if (username === "Anik") {
-                document.write("<h1> bolo paglachoda</h1>");
-                let res = document.getElementById('result');
-
-            }
-            else if (username === "sagar") {
-                    document.write("<h1> bolo paglachoda</h1>");
-            }
-            else if (username === "Sagar")
-            {
-                document.write("<h1> bolo paglachoda</h1>");
-            } else {
-                document.write("<h1>Hello, " + username + "</h1>");
-            }
-
-
-
+        if(username==="Arijit" || username==="Chris" ) {
+            document.write("<strong>Hello " + username + " you won a "+ car[randomcar] +"!</strong>");
+            document.write("<img src=\"" + Cimg[randomcar] +"\">");
+        }
+        else {
+            document.write("<h1>Hello " + username + "!");"<img src=\"" + carPictures[randomCar] +"\">"
+        }
 
     </script>
 
@@ -61,60 +49,6 @@
 
 <body>
 
-<div id = "img"> </div>
-<style>
-    #img{
-        margin: auto;
-        width: 200px;
-    }
-    img{
-      width: auto;
-        height: auto;
-    }
-    @media screen and (min-width: 600px){
-
-        
-    }
-</style>
-<script>
-    if (username === "anik") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-    }
-    else if (username==="Anik") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }else if (username==="dibyendu") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }else if (username==="Dibyendu") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "https://www.earthtouchnews.com/media/385836/screen-shot-2014-08-21-at-101244-am-640x834.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-</script>
+<h2> <a href="happyhour-simple/happy_hours.html"> happy hours>>></a>   <a href="ranmodmizer.html">randomizer >></a></h2>
 </body>
-
 </html>

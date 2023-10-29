@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Happy Hour App - How about a drink!?">
+    <meta name="keywords" content="happy hour, drink, beers">
+
+    <title>date of birth randomizer</title>
+
+    <link rel="stylesheet" href="happyhour-simple/css/normalize.css">
+    <link rel="stylesheet" href="happyhour-simple/css/randomizer.css">
+
+    <script>
+        const year =Array.apply(null, {length:100}).map(Number.call, Number);
+        const month =Array.apply(null, {length: 13}).map(Number.call, Number);
+
+
+        const randomMonth = Math.round(Math.random()*month.length);
+        const randomYear = Math.floor(Math.random()*year.length);
+
+        const Rmonth = month[randomMonth];
+        const Ryear = year[randomYear];
+
+        if (Rmonth/2 === 0){
+           const day =Array.apply(null, {length:31}).map(Number.call, Number);
+            const randomDay = Math.ceil(Math.random()*day.length);
+            const Rday = day[randomDay];
+            document.write(Rday+"/"+Rmonth)
+        }
+        else if (Rmonth === 3){
+            const day =Array.apply(null, {length:29}).map(Number.call, Number);
+            const randomDay = Math.ceil(Math.random()*day.length);
+            const Rday = day[randomDay];
+            document.write(Rday+"/"+Rmonth)
+        }
+        else {
+           const day =Array.apply(null, {length:32}).map(Number.call, Number);
+            const randomDay = Math.ceil(Math.random()*day.length);
+            const Rday = day[randomDay];
+            document.write(Rday+"/"+Rmonth);
+        }
+
+
+        if (Ryear>0 && Ryear<24){
+            const nyear= +Ryear;
+            document.write("/20"+nyear);
+        }
+        else if (Ryear>0 && Ryear <10){
+            document.write("/190"+Ryear);
+
+        }
+        else {
+            const nyear= +Ryear;
+            document.write("/19"+nyear);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
