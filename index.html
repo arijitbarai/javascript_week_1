@@ -7,10 +7,12 @@
 
         /* Basic CSS comment */
         body {
-            background: #bbb;
+            background: grey;
             color: white;
             width: 960px;
             margin: 0 auto;
+            font-size: 30px;
+            color: black;
         }
 
         h1 {
@@ -21,140 +23,27 @@
     </style>
 
     <script>
-        var username = prompt('hello! who are you?') ;
+        /* this is an event */
+        /* alert("I'm annoying"); */
 
+        var username = prompt("Hello, who are you?");
+        var car = new Array("BMW", "TATA", "Fortuner");
+        console.log(username);
+        console.log(car);
 
-            if (username === 'arijit') {
-                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
-            }
-            else if (username === 'Arijit') {
-                document.write("<h1>Hello, " + username + ". you are great!!!" + "</h1>");
-            }
-            else if (username === "anik") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }else if (username === "Dibyendu") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }else if (username === "dibyendu") {
-                document.write("<h1> bolo paglachoda</h1>");
-            }
-            else if (username === "Anik") {
-                document.write("<h1> bolo paglachoda</h1>");
-                let res = document.getElementById('result');
-
-            }
-            else if (username === "sagar") {
-                    document.write("<h1> bolo paglachoda</h1>");
-            }
-            else if (username === "Sagar")
-            {
-                document.write("<h1> bolo paglachoda</h1>");
-            } else {
-                document.write("<h1>Hello, " + username + "</h1>");
-            }
-
-
-
+        if(username==="Arijit") {
+            document.write("<h1>Hello " + username + " you won a "+ car[0] +"!</h1>");
+        }
+        else {
+            document.write("<h1>Hello " + username + "!");
+        }
 
     </script>
 
 </head>
 
 <body>
-
-<div id = "img"> </div>
-<style>
-    #img{
-        margin: auto;
-        width: 200px;
-    }
-    img{
-      width: auto;
-        height: auto;
-    }
-    @media screen and (min-width: 600px){
-
-        
-    }
-</style>
-<script>
-    if (username === "anik") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "monkey.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-    }
-    else if (username==="Anik") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "monkey.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-    else if (username==="dibyendu") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "monkey.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-    else if (username==="Dibyendu") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "monkey.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-    else if (username==="sagar") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "monkey.png";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-    else if (username==="Sagar") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "istockphoto-160231072-612x612.jpg";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }else if (username==="Arijit") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "istockphoto-160231072-612x612.jpg";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }else if (username==="arijit") {
-        let img = document.getElementById('img');
-        // Create image element
-        let dynamicImage = document.createElement('img');
-        // Initialize the image source
-        dynamicImage.src = "istockphoto-160231072-612x612.jpg";
-        // Add image to DOM
-        img.appendChild(dynamicImage);
-
-    }
-</script>
+<img src="oprha.jpg" alt="oprha">
+<h2> <a href="happyhour-simple/happy_hours.html"> happy hours>>></a></h2>
 </body>
-
 </html>
