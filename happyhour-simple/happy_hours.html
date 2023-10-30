@@ -14,7 +14,11 @@
 		<script>
 		
 			// Our List of Bars
+
+			const bars = [
+
 			var bars = [
+
 				'Siggys',
 				'Blind Tiger',
 				'Zum Schneider',
@@ -24,12 +28,33 @@
 			];
 
 			// Our List of Friends
+
+			const friends = [
+
 			var friends = [
+
 				'Mattan',
 				'Chris',
 				'Lee',
 				'Casey',
 				'that girl you forgot to text back',
+
+				'Kayne West',
+				'Anik'
+			];
+
+			const randomNumber = Math.trunc(Math.random() * bars.length);
+			const randomNumbers = Math.floor(Math.random() * friends.length);
+
+			// document.write(randomNumbers+ "\n");
+			// document.write( "\n" + randomNumber);
+			// console.log(bars.length)
+
+			const barname = bars[randomNumber];
+			const friendname = friends[randomNumbers];
+
+			document.write(" How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+
 				'Kayne West'
 			];
 
@@ -40,6 +65,7 @@
 			var friendname = friends[randomNumbers];
 
 			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+
 		
 		</script>
 	</head>
