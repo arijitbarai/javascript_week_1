@@ -26,6 +26,7 @@
         /* this is an event */
         /* alert("I'm annoying"); */
 
+
         const username = prompt("Hello, who are you?");
         const car = ["BMW", "TATA", "Fortuner"];
         const Cimg = ['download.jpg', 'Harrier_Camo_1200x768.avif', 'fornt-side-47.webp'];
@@ -35,12 +36,25 @@
         const randomcar = Math.floor(Math.random() * car.length);
 
 
+        var username = prompt("Hello, who are you?");
+        var car = new Array("BMW", "TATA", "Fortuner");
+        console.log(username);
+        console.log(car);
+
+
         if(username==="Arijit" || username==="Chris" ) {
             document.write("<strong>Hello " + username + " you won a "+ car[randomcar] +"!</strong>");
             document.write("<img src=\"" + Cimg[randomcar] +"\">");
         }
         else {
             document.write("<h1>Hello " + username + "!");"<img src=\"" + carPictures[randomCar] +"\">"
+
+        if(username==="Arijit") {
+            document.write("<h1>Hello " + username + " you won a "+ car[0] +"!</h1>");
+        }
+        else {
+            document.write("<h1>Hello " + username + "!");
+
         }
 
     </script>
@@ -49,6 +63,11 @@
 
 <body>
 
+
 <h2> <a href="happyhour-simple/happy_hours.html"> happy hours>>></a>   <a href="ranmodmizer.html">randomizer >></a></h2>
+
+<img src="oprha.jpg" alt="oprha">
+<h2> <a href="happyhour-simple/happy_hours.html"> happy hours>>></a></h2>
+
 </body>
 </html>
