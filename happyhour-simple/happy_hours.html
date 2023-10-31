@@ -14,7 +14,7 @@
 		<script>
 		
 			// Our List of Bars
-			var bars = [
+			const bars = [
 				'Siggys',
 				'Blind Tiger',
 				'Zum Schneider',
@@ -24,28 +24,33 @@
 			];
 
 			// Our List of Friends
-			var friends = [
+			const friends = [
 				'Mattan',
 				'Chris',
 				'Lee',
 				'Casey',
 				'that girl you forgot to text back',
-				'Kayne West'
+				'Kayne West',
+				'Anik'
 			];
 
-			var randomNumber = Math.floor(Math.random()*bars.length);
-			var randomNumbers = Math.floor(Math.random()*friends.length);
+			const randomNumber = Math.trunc(Math.random() * bars.length);
+			const randomNumbers = Math.floor(Math.random() * friends.length);
 
-			var barname = bars[randomNumber];
-			var friendname = friends[randomNumbers];
+			// document.write(randomNumbers+ "\n");
+			// document.write( "\n" + randomNumber);
+			// console.log(bars.length)
 
-			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+			const barname = bars[randomNumber];
+			const friendname = friends[randomNumbers];
+
+			document.write(" How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
 		
 		</script>
 	</head>
 	<body>
 		<!-- PAGE CONTENT WILL BE PRINTED HERE -->
 	<p>
-		<a href="/index.html"><< home </a></p>
+		<a href="/javascript_week_1"><< home </a></p>
 	</body>
 </html>
